@@ -1,0 +1,10 @@
+{
+  "name": "Hoot Server",
+  "web": {
+    "domain": "hoot-nht.netlify.app"
+  },
+  "cors": {
+    "origin": "https://hoot-nht.netlify.app",
+    "maxAge": 7200
+  }
+}
