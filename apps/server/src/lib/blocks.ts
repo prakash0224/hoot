@@ -237,62 +237,62 @@ export const generateWelcomePageBlocks = (
     ],
   };
 
-  const followUsHeadingBlock: Block = {
-    id: generateId(IdType.Block),
-    type: 'heading2',
-    parentId: pageId,
-    index: generateFractionalIndex(blockquoteBlock.index),
-    content: [{ type: 'text', text: 'Follow Us' }],
-  };
+  // const followUsHeadingBlock: Block = {
+  //   id: generateId(IdType.Block),
+  //   type: 'heading2',
+  //   parentId: pageId,
+  //   index: generateFractionalIndex(blockquoteBlock.index),
+  //   content: [{ type: 'text', text: 'Follow Us' }],
+  // };
 
-  const followUsParagraphBlock: Block = {
-    id: generateId(IdType.Block),
-    type: 'paragraph',
-    parentId: pageId,
-    index: generateFractionalIndex(followUsHeadingBlock.index),
-    content: [
-      {
-        text: 'Stay updated with our latest developments on ',
-        type: 'text',
-      },
-      {
-        text: 'X (Twitter)',
-        type: 'text',
-        marks: [
-          {
-            type: 'link',
-            attrs: {
-              rel: 'noopener noreferrer nofollow',
-              href: 'https://x.com/colanode',
-              target: '_blank',
-            },
-          },
-        ],
-      },
-      {
-        text: '. Join our open-source community and contribute your ideas on ',
-        type: 'text',
-      },
-      {
-        text: 'GitHub',
-        type: 'text',
-        marks: [
-          {
-            type: 'link',
-            attrs: {
-              rel: 'noopener noreferrer nofollow',
-              href: 'https://github.com/colanode/colanode',
-              target: '_blank',
-            },
-          },
-        ],
-      },
-      {
-        text: ' - we welcome all contributions!',
-        type: 'text',
-      },
-    ],
-  };
+  // const followUsParagraphBlock: Block = {
+  //   id: generateId(IdType.Block),
+  //   type: 'paragraph',
+  //   parentId: pageId,
+  //   index: generateFractionalIndex(followUsHeadingBlock.index),
+  //   content: [
+  //     {
+  //       text: 'Stay updated with our latest developments on ',
+  //       type: 'text',
+  //     },
+  //     {
+  //       text: 'X (Twitter)',
+  //       type: 'text',
+  //       marks: [
+  //         {
+  //           type: 'link',
+  //           attrs: {
+  //             rel: 'noopener noreferrer nofollow',
+  //             href: 'https://x.com/colanode',
+  //             target: '_blank',
+  //           },
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       text: '. Join our open-source community and contribute your ideas on ',
+  //       type: 'text',
+  //     },
+  //     {
+  //       text: 'GitHub',
+  //       type: 'text',
+  //       marks: [
+  //         {
+  //           type: 'link',
+  //           attrs: {
+  //             rel: 'noopener noreferrer nofollow',
+  //             href: 'https://github.com/colanode/colanode',
+  //             target: '_blank',
+  //           },
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       text: ' - we welcome all contributions!',
+  //       type: 'text',
+  //     },
+  //   ],
+  // };
 
   const result: Record<string, Block> = {
     [headingBlock.id]: headingBlock,
@@ -312,8 +312,8 @@ export const generateWelcomePageBlocks = (
     [databaseParagraphBlock2.id]: databaseParagraphBlock2,
     [blockquoteBlock.id]: blockquoteBlock,
     [blockquoteParagraphBlock.id]: blockquoteParagraphBlock,
-    [followUsHeadingBlock.id]: followUsHeadingBlock,
-    [followUsParagraphBlock.id]: followUsParagraphBlock,
+    // [followUsHeadingBlock.id]: followUsHeadingBlock,
+    // [followUsParagraphBlock.id]: followUsParagraphBlock,
   };
 
   return result;
