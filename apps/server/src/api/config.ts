@@ -30,6 +30,7 @@ export const configGetRoute: FastifyPluginCallbackZod = (instance, _, done) => {
                 enabled: false,
               },
         },
+        branding: config.branding
       };
 
       return output;

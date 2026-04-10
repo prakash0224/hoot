@@ -6,5 +6,15 @@
   "cors": {
     "origin": "https://hoot-nht.netlify.app",
     "maxAge": 7200
+  },
+  "branding": {
+    "appName": "Hoot",
+    "logoUrl": "https://your-cdn/logo.png",
+    "faviconUrl": "https://your-cdn/favicon.ico",
+    "primaryColor": "#4F46E5",
+    "secondaryColor": "#111827",
+    "welcomeTitle": "Welcome to Hoot!",
+    "welcomeSubtitle": "Your workspace starts here.",
+    "supportEmail": "support@nhtech.link"
   }
 }

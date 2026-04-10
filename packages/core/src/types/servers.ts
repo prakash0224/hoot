@@ -22,6 +22,16 @@ export const serverConfigSchema = z.object({
   ip: z.string().nullable().optional(),
   pathPrefix: z.string().nullable().optional(),
   account: serverAccountConfigSchema.nullable().optional(),
+  branding: z.object({
+    appName: z.string(),
+    logoUrl: z.string().optional(),
+    faviconUrl: z.string().optional(),
+    primaryColor: z.string(),
+    secondaryColor: z.string(),
+    welcomeTitle: z.string(),
+    welcomeSubtitle: z.string().optional(),
+    supportEmail: z.string().optional(),
+  }).optional(),
 });
 
 export type ServerConfig = z.infer<typeof serverConfigSchema>;

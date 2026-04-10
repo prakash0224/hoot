@@ -16,6 +16,7 @@ import {
   resolveOptionalConfigReference,
 } from './utils';
 import { workspaceConfigSchema } from './workspace';
+import { brandingSchema } from './branding';
 
 const serverModeSchema = z.enum(['standalone', 'cluster']);
 
@@ -42,6 +43,7 @@ const configSchema = z.object({
   jobs: jobsConfigSchema,
   logging: loggingConfigSchema,
   workspace: workspaceConfigSchema,
+  branding: brandingSchema.optional()
 });
 
 export type Configuration = z.infer<typeof configSchema>;
